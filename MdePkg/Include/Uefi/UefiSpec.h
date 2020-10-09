@@ -2131,6 +2131,7 @@ typedef struct _EFI_LOAD_OPTION {
 /// EFI Boot Key Data
 ///
 typedef union {
+    /*
   struct {
     ///
     /// Indicates the revision of the EFI_KEY_OPTION structure. This revision level should be 0.
@@ -2167,7 +2168,7 @@ typedef union {
     /// only be launched if all of the specified keys are pressed with the same shift state.
     ///
     UINT32  InputKeyCount   : 2;
-  } Options;
+  } Options;*/
   UINT32  PackedValue;
 } EFI_BOOT_KEY_DATA;
 
